@@ -5,129 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baku Butik Hotel</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f6f6f6; color:#333; text-align:center; }
-    header { background:#333; color:white; padding:25px; }
-    header h1 { margin:0; font-size:2em; }
-    header p { margin-top:8px; font-size:1.1em; }
-    section { padding:20px; max-width:1000px; margin:0 auto; line-height:1.6; background:#fffdfa; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); }
-    .gallery { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:20px; }
-    .gallery img { width:100%; max-width:300px; height:auto; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2); transition: transform 0.2s; }
-    .gallery img:hover { transform:scale(1.03); }
-    .room { text-align:left; background:#fffaf2; margin-top:25px; border-radius:12px; padding:18px; border-left:5px solid #d4b179; }
-    .room h3 { color:#8b6c36; margin-top:0; }
-    .room p { color:#4c3e2c; font-size:1em; }
-    .buttons { margin-top:15px; text-align:center; }
-    .btn { display:inline-block; margin:5px; padding:10px 22px; border-radius:8px; text-decoration:none; color:white; font-weight:600; font-size:0.95em; transition: background 0.3s, transform 0.2s; }
-    .reserve { background:#b7935a; }
-    .call { background:#7a643a; }
-    .btn:hover { transform:scale(1.05); opacity:0.9; }
-    footer { background:#333; color:white; padding:15px; margin-top:40px; font-size:0.95em; }
-    footer a { color:#e7cfa1; text-decoration:none; }
-    footer a:hover { text-decoration:underline; }
+    body { 
+      font-family: Arial, sans-serif; 
+      margin:0; 
+      padding:0; 
+      background:#f6f6f6; 
+      color:#333; 
+    }
+
+    /* Header / Navbar */
+    .site-header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Logo sol, başlıq sağ */
+    }
+
+    .logo {
+      width: 60px;
+      height: auto;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      margin: 0;
+    }
+
+    /* Responsive mobil üçün */
+    @media (max-width: 600px) {
+      .site-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+      .header-title {
+        font-size: 1.5em;
+      }
+    }
+
+    section { 
+      padding:20px; 
+      max-width:1000px; 
+      margin:20px auto; 
+      line-height:1.6; 
+      background:#fffdfa; 
+      border-radius:12px; 
+      box-shadow:0 2px 12px rgba(0,0,0,0.08); 
+    }
+
+    .gallery { 
+      display:flex; 
+      flex-wrap:wrap; 
+      justify-content:center; 
+      gap:10px; 
+      margin-top:20px; 
+    }
+
+    .gallery img { 
+      width:100%; 
+      max-width:300px; 
+      height:auto; 
+      border-radius:10px; 
+      box-shadow:0 2px 6px rgba(0,0,0,0.2); 
+      transition: transform 0.2s; 
+    }
+
+    .gallery img:hover { 
+      transform:scale(1.03); 
+    }
+
+    .room { 
+      text-align:left; 
+      background:#fffaf2; 
+      margin-top:25px; 
+      border-radius:12px; 
+      padding:18px; 
+      border-left:5px solid #d4b179; 
+    }
+
+    .room h3 { 
+      color:#8b6c36; 
+      margin:0 0 10px 0; 
+    }
+
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Baku Butik Hotel</h1>
-  <p>İnşaatçılar metrosu yaxınlığında 35-40 manata 2 və 3 nəfərlik ailəvi otaqlar təklif edir.</p>
-</header>
+  <!-- Başlıq bölməsi -->
+  <header class="site-header">
+    <img src="https://bakubutik.github.io/bakubutik-hotel.github.io/images/logo.png" alt="Baku Butik Hotel Logo" class="logo">
+    <h1 class="header-title">Baku Butik Hotel</h1>
+  </header>
 
-<section>
-  <!-- Şəkil qalereyası -->
-  <div class="gallery">
-    <img src="1759840732834.jpg" alt="Hotel şəkli">
-    <img src="1759840732844 (3).jpg" alt="Hotel şəkli">
-    <img src="1759840732894 (2).jpg" alt="Hotel şəkli">
-    <img src="1759840732937 (2).jpg" alt="Hotel şəkli">
-    <img src="1759840732946 (2).jpg" alt="Hotel şəkli">
-    <img src="1759840732957 (3).jpg" alt="Hotel şəkli">
-    <img src="1759840732964 (3).jpg" alt="Hotel şəkli">
-    <img src="1759840732996 (2).jpg" alt="Hotel şəkli">
-    <img src="1759840733004 (2).jpg" alt="Hotel şəkli">
-    <img src="1759840733013.jpg" alt="Hotel şəkli">
-    <img src="1759840733022 (2).jpg" alt="Hotel şəkli">
-    <img src="1759840733029 (2).jpg" alt="Hotel şəkli">
-    <img src="1759840733037 (2).jpg" alt="Hotel şəkli">
-    <img src="1759840733048 (2).jpg" alt="Hotel şəkli">
-    <img src="1759840733073.jpg" alt="Hotel şəkli">
-    <img src="1761225294022.jpg" alt="Hotel şəkli">
-    <img src="1761225294225.JPG" alt="Hotel şəkli">
-    <img src="1761225294233.JPG" alt="Hotel şəkli">
-    <img src="1761225294245.JPG" alt="Hotel şəkli">
-    <img src="1761225294256.JPG" alt="Hotel şəkli">
-    <img src="1761225294274.JPG" alt="Hotel şəkli">
-    <img src="1761225294285.JPG" alt="Hotel şəkli">
-    <img src="1761225294294.JPG" alt="Hotel şəkli">
-    <img src="1761225294306.JPG" alt="Hotel şəkli">
-    <img src="1761225294329.JPG" alt="Hotel şəkli">
-    <img src="1761225294341.JPG" alt="Hotel şəkli">
-    <img src="1761225294366.JPG" alt="Hotel şəkli">
-  </div>
+  <!-- Saytın əsas məzmunu -->
+  <section>
+    <p>Baku Butik Hotel sizə rahat, təmiz və ailəvi atmosferdə istirahət imkanı təqdim edir. Otaqlar 2, 3 və 4 nəfərlikdir. Qiymətlər 35–45 AZN aralığındadır. Qonaqlar üçün mətbəx, 24 saat isti su, Wi-Fi və kondisioner mövcuddur.</p>
 
-  <!-- Otaqlar -->
-  <div class="room">
-    <h3>Otaq №1</h3>
-    <p>2 nəfərlik və 1 nəfərlik çarpayı, əlavə yumşaq, enli açılan kreslo çarpayı. Vanna otağı otağın daxilində.</p>
-    <div class="buttons">
-      <a href="https://wa.me/994773480060?text=Salam,+Otaq+%231+rezervasiya etmək istəyirəm" class="btn reserve">Online rezervasiya</a>
-      <a href="tel:+994773480060" class="btn call">Zəng et</a>
+    <div class="gallery">
+      <img src="images/room1.jpg" alt="Otaq 1">
+      <img src="images/room2.jpg" alt="Otaq 2">
+      <img src="images/room3.jpg" alt="Otaq 3">
+      <img src="images/room4.jpg" alt="Otaq 4">
+      <img src="images/room5.jpg" alt="Otaq 5">
     </div>
-  </div>
 
-  <div class="room">
-    <h3>Otaq №2</h3>
-    <p>2 nəfərlik çarpayı, əlavə yumşaq, enli açılan kreslo çarpayı. Vanna otağı otağın daxilində.</p>
-    <div class="buttons">
-      <a href="https://wa.me/994773480060?text=Salam,+Otaq+%232+rezervasiya etmək istəyirəm" class="btn reserve">Online rezervasiya</a>
-      <a href="tel:+994773480060" class="btn call">Zəng et</a>
+    <div class="room">
+      <h3>Otaq növləri</h3>
+      <p>2 nəfərlik otaq – 35 AZN</p>
+      <p>3 nəfərlik otaq – 40 AZN</p>
+      <p>4 nəfərlik otaq – 45 AZN</p>
     </div>
-  </div>
-
-  <div class="room">
-    <h3>Otaq №3</h3>
-    <p>2 nəfərlik çarpayı, əlavə yumşaq, enli açılan kreslo çarpayı. Vanna otağı otağın daxilində.</p>
-    <div class="buttons">
-      <a href="https://wa.me/994773480060?text=Salam,+Otaq+%233+rezervasiya etmək istəyirəm" class="btn reserve">Online rezervasiya</a>
-      <a href="tel:+994773480060" class="btn call">Zəng et</a>
-    </div>
-  </div>
-
-  <div class="room">
-    <h3>Otaq №4</h3>
-    <p>2 nəfərlik çarpayı. Vanna otağı otağın daxilində.</p>
-    <div class="buttons">
-      <a href="https://wa.me/994773480060?text=Salam,+Otaq+%234+rezervasiya etmək istəyirəm" class="btn reserve">Online rezervasiya</a>
-      <a href="tel:+994773480060" class="btn call">Zəng et</a>
-    </div>
-  </div>
-
-  <div class="room">
-    <h3>Otaq №6</h3>
-    <p>2 nəfərlik və 1 nəfərlik çarpayı, əlavə yumşaq, enli açılan kreslo çarpayı. Vanna otağı dəhlizdə.</p>
-    <div class="buttons">
-      <a href="https://wa.me/994773480060?text=Salam,+Otaq+%236+rezervasiya etmək istəyirəm" class="btn reserve">Online rezervasiya</a>
-      <a href="tel:+994773480060" class="btn call">Zəng et</a>
-    </div>
-  </div>
-
-  <div class="room">
-    <h3>Otaq №7</h3>
-    <p>3 ədəd bir nəfərlik çarpayı. Vanna otağı otağa bitişik.</p>
-    <div class="buttons">
-      <a href="https://wa.me/994773480060?text=Salam,+Otaq+%237+rezervasiya etmək istəyirəm" class="btn reserve">Online rezervasiya</a>
-      <a href="tel:+994773480060" class="btn call">Zəng et</a>
-    </div>
-  </div>
-
-</section>
-
-<footer>
-  <p>Əlaqə: +994773480060 (WhatsApp)</p>
-  <p>Email: bakubutik@gmail.com</p>
-  <p>© 2025 Baku Butik Hotel</p>
-</footer>
-
+  </section>
 
 </body>
 </html>
