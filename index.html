@@ -1,9 +1,3 @@
-Başa düşdüm. Mətn və simvolları çıxararaq tələblərinizə uyğunlaşdırılmış sonuncu HTML kodu versiyasını təkrar təqdim edirəm.
-Aşağıdakı dəyişikliklər edilib:
- * Əlaqə məlumatlarında "(WhatsApp mövcuddur)" sözü silinib.
- * Email məlumatında "📧" simvolu silinib.
- * Footer-dəki " — Rahatlığınız üçün buradayıq" cümləsi silinib.
-Buyurun, yenilənmiş kod:
 <!DOCTYPE html>
 <html lang="az">
 <head>
@@ -11,115 +5,128 @@ Buyurun, yenilənmiş kod:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baku Butik Hotel</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f6f6f6;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background: #333;
-      color: white;
-      padding: 25px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    header p {
-      margin-top: 8px;
-      font-size: 1.1em;
-    }
-    section {
-      padding: 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-    .gallery {
-      /* Flexbox istifadə edərək şəkilləri düzürük */
-      display: flex;
-      flex-wrap: wrap; 
-      justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
-    }
-    .gallery img {
-      /* Mobil və böyük ekranlar üçün şəkil ölçüsünü təyin edirik */
-      width: 100%; 
-      max-width: 300px; 
-      height: auto; 
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      transition: transform 0.2s;
-    }
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-    footer {
-      background: #333;
-      color: white;
-      padding: 15px;
-      margin-top: 40px;
-    }
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f6f6f6; color:#333; text-align:center; }
+    header { background:#333; color:white; padding:25px; }
+    header h1 { margin:0; font-size:2em; }
+    header p { margin-top:8px; font-size:1.1em; }
+    section { padding:20px; max-width:1000px; margin:0 auto; line-height:1.6; background:#fffdfa; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); }
+    .gallery { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:20px; }
+    .gallery img { width:100%; max-width:300px; height:auto; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2); transition: transform 0.2s; }
+    .gallery img:hover { transform:scale(1.03); }
+    .room { text-align:left; background:#fffaf2; margin-top:25px; border-radius:12px; padding:18px; border-left:5px solid #d4b179; }
+    .room h3 { color:#8b6c36; margin-top:0; }
+    .room p { color:#4c3e2c; font-size:1em; }
+    .buttons { margin-top:15px; text-align:center; }
+    .btn { display:inline-block; margin:5px; padding:10px 22px; border-radius:8px; text-decoration:none; color:white; font-weight:600; font-size:0.95em; transition: background 0.3s, transform 0.2s; }
+    .reserve { background:#b7935a; }
+    .call { background:#7a643a; }
+    .btn:hover { transform:scale(1.05); opacity:0.9; }
+    footer { background:#333; color:white; padding:15px; margin-top:40px; font-size:0.95em; }
+    footer a { color:#e7cfa1; text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Baku Butik Hotel</h1>
-    <p>Təmiz və ailəvi istirahət üçün ideal seçim — Metro İnşaatçılar yaxınlığında</p>
-  </header>
+<header>
+  <h1>Baku Butik Hotel</h1>
+  <p>İnşaatçılar metrosu yaxınlığında 35-40 manata 2 və 3 nəfərlik ailəvi otaqlar təklif edir.</p>
+</header>
 
-  <section>
-    <h2>Haqqımızda</h2>
-    <p>
-      Baku Butik Hotel sizə rahat, təmiz və ailəvi atmosferdə istirahət imkanı təqdim edir.  
-      Otaqlar 2, 3 və 4 nəfərlikdir. Qiymətlər 35–45 AZN aralığındadır.  
-      Qonaqlar üçün mətbəx, 24 saat isti su, Wi-Fi və kondisioner mövcuddur.  
-      Yaxınlıqda 7/24 supermarket, aptek və kafe fəaliyyət göstərir.  
-      İnşaatçılar metro stansiyasına piyada cəmi 6 dəqiqəlik məsafədə yerləşirik.
-    </p>
+<section>
+  <!-- Şəkil qalereyası -->
+  <div class="gallery">
+    <img src="1759840732834.jpg" alt="Hotel şəkli">
+    <img src="1759840732844 (3).jpg" alt="Hotel şəkli">
+    <img src="1759840732894 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840732937 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840732946 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840732957 (3).jpg" alt="Hotel şəkli">
+    <img src="1759840732964 (3).jpg" alt="Hotel şəkli">
+    <img src="1759840732996 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840733004 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840733013.jpg" alt="Hotel şəkli">
+    <img src="1759840733022 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840733029 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840733037 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840733048 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840733073.jpg" alt="Hotel şəkli">
+    <img src="1761225294022.jpg" alt="Hotel şəkli">
+    <img src="1761225294225.JPG" alt="Hotel şəkli">
+    <img src="1761225294233.JPG" alt="Hotel şəkli">
+    <img src="1761225294245.JPG" alt="Hotel şəkli">
+    <img src="1761225294256.JPG" alt="Hotel şəkli">
+    <img src="1761225294274.JPG" alt="Hotel şəkli">
+    <img src="1761225294285.JPG" alt="Hotel şəkli">
+    <img src="1761225294294.JPG" alt="Hotel şəkli">
+    <img src="1761225294306.JPG" alt="Hotel şəkli">
+    <img src="1761225294329.JPG" alt="Hotel şəkli">
+    <img src="1761225294341.JPG" alt="Hotel şəkli">
+    <img src="1761225294366.JPG" alt="Hotel şəkli">
+  </div>
 
-    <div class="gallery">
-      <img src="1759840732834.jpg" alt="Hotel Şəkli 1">
-      <img src="1759840732844 (3).jpg" alt="Hotel Şəkli 2">
-      <img src="1759840732894 (2).jpg" alt="Hotel Şəkli 3">
-      <img src="1759840732937 (2).jpg" alt="Hotel Şəkli 4">
-      <img src="1759840732946 (2).jpg" alt="Hotel Şəkli 5">
-      <img src="1759840732957 (3).jpg" alt="Hotel Şəkli 6">
-      <img src="1759840732964 (3).jpg" alt="Hotel Şəkli 7">
-      <img src="1759840732996 (2).jpg" alt="Hotel Şəkli 8">
-      <img src="1759840733004 (2).jpg" alt="Hotel Şəkli 9">
-      <img src="1759840733013.jpg" alt="Hotel Şəkli 10">
-      <img src="1759840733022 (2).jpg" alt="Hotel Şəkli 11">
-      <img src="1759840733029 (2).jpg" alt="Hotel Şəkli 12">
-      <img src="1759840733037 (2).jpg" alt="Hotel Şəkli 13">
-      <img src="1759840733048 (2).jpg" alt="Hotel Şəkli 14">
-      <img src="1759840733073.jpg" alt="Hotel Şəkli 15">
-      <img src="1761225294022.jpg" alt="Hotel Şəkli 16">
-      <img src="1761225294225.JPG" alt="Hotel Şəkli 17">
-      <img src="1761225294233.JPG" alt="Hotel Şəkli 18">
-      <img src="1761225294245.JPG" alt="Hotel Şəkli 19">
-      <img src="1761225294256.JPG" alt="Hotel Şəkli 20">
-      <img src="1761225294274.JPG" alt="Hotel Şəkli 21">
-      <img src="1761225294285.JPG" alt="Hotel Şəkli 22">
-      <img src="1761225294294.JPG" alt="Hotel Şəkli 23">
-      <img src="1761225294306.JPG" alt="Hotel Şəkli 24">
-      <img src="1761225294329.JPG" alt="Hotel Şəkli 25">
-      <img src="1761225294341.JPG" alt="Hotel Şəkli 26">
-      <img src="1761225294366.JPG" alt="Hotel Şəkli 27">
+  <!-- Otaqlar -->
+  <div class="room">
+    <h3>Otaq №1</h3>
+    <p>2 nəfərlik və 1 nəfərlik çarpayı, əlavə yumşaq, enli açılan kreslo çarpayı. Vanna otağı otağın daxilində.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
     </div>
-  </section>
+  </div>
 
-  <footer>
-    <p>📞 Əlaqə: +994773480060 (WhatsApp)</p>
-    <p>Email: bakubutik@gmail.com</p>
-    <p>© 2025 Baku Butik Hotel</p>
-  </footer>
+  <div class="room">
+    <h3>Otaq №2</h3>
+    <p>2 nəfərlik çarpayı, əlavə yumşaq, enli açılan kreslo çarpayı. Vanna otağı otağın daxilində.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
+    </div>
+  </div>
+
+  <div class="room">
+    <h3>Otaq №3</h3>
+    <p>2 nəfərlik çarpayı, əlavə yumşaq, enli açılan kreslo çarpayı. Vanna otağı otağın daxilində.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
+    </div>
+  </div>
+
+  <div class="room">
+    <h3>Otaq №4</h3>
+    <p>2 nəfərlik çarpayı. Vanna otağı otağın daxilində.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
+    </div>
+  </div>
+
+  <div class="room">
+    <h3>Otaq №6</h3>
+    <p>2 nəfərlik və 1 nəfərlik çarpayı, əlavə yumşaq, enli açılan kreslo çarpayı. Vanna otağı dəhlizdə üzbəüz.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
+    </div>
+  </div>
+
+  <div class="room">
+    <h3>Otaq №7</h3>
+    <p>3 ədəd bir nəfərlik çarpayı. Vanna otağı otağa bitişik.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>Əlaqə: +994773480060 (WhatsApp)</p>
+  <p>Email: bakubutik@gmail.com</p>
+  <p>© 2025 Baku Butik Hotel</p>
+</footer>
 
 </body>
 </html>
-
