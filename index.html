@@ -5,266 +5,148 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Baku Butik Hotel</title>
 <style>
-body {
-  font-family: "Poppins", Arial, sans-serif;
-  background: #f3f6fa;
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
+body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.header { text-align: center; margin-bottom: 40px; }
+.header h1 { color: #2c3e50; }
+.header p { color: #555; line-height: 1.6; }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 50px;
-  background: linear-gradient(120deg, #007bff, #00a3b4);
-  color: white;
-  padding: 40px 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-}
-
-.header h1 {
-  font-size: 32px;
-  margin-bottom: 15px;
-}
-
-.header p {
-  font-size: 17px;
-  line-height: 1.6;
-  margin: 0 auto;
-  max-width: 700px;
-}
-
-.header ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-  text-align: left;
-  display: inline-block;
-}
-
-.header ul li {
-  padding: 5px 0;
-  font-size: 15px;
-}
-
-.room {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-  transition: all 0.3s ease;
-}
-
-.room:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
-.room img {
-  width: 100%;
-  max-width: 420px;
-  object-fit: cover;
-}
-
-.room-content {
-  flex: 1;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.room-content h2 {
-  color: #007bff;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.room-content p {
-  line-height: 1.6;
-}
-
-.room-content .price {
-  font-weight: bold;
-  color: #e74c3c;
-  margin-top: 10px;
-}
-
-.buttons {
-  margin-top: 15px;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-right: 10px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.call {
-  background: #007bff;
-}
-
-.call:hover {
-  background: #0056b3;
-  transform: scale(1.05);
-}
-
-.reserve {
-  background: #28a745;
-}
-
-.reserve:hover {
-  background: #1e7e34;
-  transform: scale(1.05);
-}
-
-.footer {
-  text-align: center;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-top: 40px;
-  padding-bottom: 40px;
-  font-size: 18px;
-}
-
-@media (max-width: 768px) {
-  .room { flex-direction: column; }
-  .room img { max-width: 100%; }
-  .header ul { text-align: left; }
-}
+.room { background: #fff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 30px; display: flex; flex-wrap: wrap; overflow: hidden; }
+.room img { width: 100%; max-width: 400px; border-right: 1px solid #ddd; }
+.room-content { padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.room-content h2 { margin-top: 0; color: #34495e; }
+.room-content p { color: #555; line-height: 1.5; }
+.room-content ul { padding-left: 20px; color: #555; margin: 10px 0; }
+.room-content .price { font-weight: bold; color: #e74c3c; margin: 10px 0; }
+.buttons { margin-top: 15px; }
+.button { display: inline-block; padding: 10px 20px; margin-right: 10px; border-radius: 5px; text-decoration: none; color: #fff; transition: 0.3s; }
+.reserve { background: #28a745; }
+.reserve:hover { background: #218838; }
+.call { background: #007bff; }
+.call:hover { background: #0056b3; }
+@media(max-width:768px){ .room { flex-direction: column; } .room img { border-right: none; border-bottom: 1px solid #ddd; } }
 </style>
 </head>
 <body>
 <div class="container">
 
+  <!-- Header -->
   <div class="header">
     <h1>Baku Butik Hotel</h1>
-    <p>İnşaatçılar metrosu yaxınlığında 35–40 manat arası ailəvi otaqlar təklif edir.</p>
+    <p>İnşaatçılar metrosu yaxınlığında 35-40 manat evə 3 nəfərlik ailəvi otaqlar təklif edir.</p>
     <ul>
-      <li>🏠 Qonaqlar üçün hər bir şəraiti olan mətbəx</li>
-      <li>🛒 50 m məsafədə 7/24 supermarket</li>
-      <li>⚡ Yüksək sürətli 5G Wi-Fi</li>
-      <li>🔥 Mərkəzi isitmə sistemi</li>
-      <li>❄️ Kondisioner</li>
-      <li>📺 LED / Smart TV</li>
-      <li>🍵 Otaqlarda çaynik, paket çay və şəkər</li>
-      <li>🚖 Qarşılama xidməti (transfer)</li>
-      <li>🧹 Gündəlik təmizlik xidməti</li>
-      <li>🧺 Paltaryuyan maşın və yuyucu toz pulsuzdur</li>
-      <li>👰 Evlilik tələb olunur</li>
+      <li>Qonaqlar üçün hər bir şəraiti olan mətbəx</li>
+      <li>50 metr məsafədə 7/24 supermarket</li>
+      <li>Yüksək sürətli 5G wifi</li>
+      <li>Mərkəzi isitmə sistemi</li>
+      <li>Kondisioner</li>
+      <li>Led/smart TV</li>
+      <li>Otaqlarda çaynik, paket çay və şəkər</li>
+      <li>Qarşılama xidməti (transfer)</li>
+      <li>Gündəlik təmizlik xidməti</li>
+      <li>Otaqlarda adambaşı dəsmal dəstləri</li>
+      <li>Paltaryuyan maşın və yuyucu toz pulsuzdur</li>
+      <li>Evlilik tələb olunur</li>
     </ul>
   </div>
 
-  <!-- OTAQLAR -->
-
+  <!-- Otaq N1 -->
   <div class="room">
-    <img src="otaqN1.jpg" alt="Otaq N1">
+    <img src="otaqN1.jpg" alt="Otaq N1 - 3 nəfərlik">
     <div class="room-content">
       <div>
         <h2>Otaq N1</h2>
         <p>3 nəfərlik otaq. 2 nəfərlik çarpayı, bir nəfərlik çarpayı. Əlavə olaraq açılan kreslo. Vanna otağı otağın daxilində.</p>
-        <p class="price">Qiymət: 35–40 AZN</p>
+        <p class="price">Qiymət: 35-40 AZN</p>
       </div>
       <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N1%20rezervasiya%20etmək%20istəyirəm." class="button call">📞 Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">🛏️ Online Reservation</a>
+        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N1%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
+        <a href="#reservation" class="button reserve">Online Reservation</a>
       </div>
     </div>
   </div>
 
+  <!-- Otaq N2 -->
   <div class="room">
-    <img src="otaqN2.jpg" alt="Otaq N2">
+    <img src="otaqN2.jpg" alt="Otaq N2 - 2 nəfərlik">
     <div class="room-content">
       <div>
         <h2>Otaq N2</h2>
-        <p>İki nəfərlik otaq. 2 nəfərlik çarpayı və açılan kreslo. Vanna otağı otağın daxilində.</p>
-        <p class="price">Qiymət: 35–40 AZN</p>
+        <p>İki nəfərlik otaq. 2 nəfərlik çarpayı. Əlavə olaraq açılan kreslo. Vanna otağı otağın daxilində.</p>
+        <p class="price">Qiymət: 35-40 AZN</p>
       </div>
       <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N2%20rezervasiya%20etmək%20istəyirəm." class="button call">📞 Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">🛏️ Online Reservation</a>
+        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N2%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
+        <a href="#reservation" class="button reserve">Online Reservation</a>
       </div>
     </div>
   </div>
 
+  <!-- Otaq N3 -->
   <div class="room">
-    <img src="otaqN3.jpg" alt="Otaq N3">
+    <img src="otaqN3.jpg" alt="Otaq N3 - 2 nəfərlik">
     <div class="room-content">
       <div>
         <h2>Otaq N3</h2>
-        <p>İki nəfərlik otaq. 2 nəfərlik çarpayı və açılan kreslo. Vanna otağı otağın daxilində.</p>
-        <p class="price">Qiymət: 35–40 AZN</p>
+        <p>İki nəfərlik otaq. 2 nəfərlik çarpayı. Əlavə olaraq açılan kreslo. Vanna otağı otağın daxilində.</p>
+        <p class="price">Qiymət: 35-40 AZN</p>
       </div>
       <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N3%20rezervasiya%20etmək%20istəyirəm." class="button call">📞 Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">🛏️ Online Reservation</a>
+        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N3%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
+        <a href="#reservation" class="button reserve">Online Reservation</a>
       </div>
     </div>
   </div>
 
+  <!-- Otaq N4 -->
   <div class="room">
-    <img src="otaqN4.jpg" alt="Otaq N4">
+    <img src="otaqN4.jpg" alt="Otaq N4 - 2 nəfərlik">
     <div class="room-content">
       <div>
         <h2>Otaq N4</h2>
         <p>İki nəfərlik otaq. 2 nəfərlik çarpayı. Vanna otağı otağın daxilində.</p>
-        <p class="price">Qiymət: 35–40 AZN</p>
+        <p class="price">Qiymət: 35-40 AZN</p>
       </div>
       <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N4%20rezervasiya%20etmək%20istəyirəm." class="button call">📞 Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">🛏️ Online Reservation</a>
+        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N4%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
+        <a href="#reservation" class="button reserve">Online Reservation</a>
       </div>
     </div>
   </div>
 
+  <!-- Otaq N6 -->
   <div class="room">
-    <img src="otaqN6.jpg" alt="Otaq N6">
+    <img src="otaqN6.jpg" alt="Otaq N6 - 3 nəfərlik">
     <div class="room-content">
       <div>
         <h2>Otaq N6</h2>
-        <p>3 nəfərlik otaq. 2 nəfərlik çarpayı, bir nəfərlik çarpayı və açılan kreslo. Vanna otağı dəhlizdə, otağa yaxın məsafədə yerləşir.</p>
-        <p class="price">Qiymət: 35–40 AZN</p>
+        <p>3 nəfərlik otaq. 2 nəfərlik çarpayı, bir nəfərlik çarpayı. Əlavə olaraq açılan kreslo. Vanna otağı dəhlizdə üzbəüz.</p>
+        <p class="price">Qiymət: 35-40 AZN</p>
       </div>
       <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N6%20rezervasiya%20etmək%20istəyirəm." class="button call">📞 Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">🛏️ Online Reservation</a>
+        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N6%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
+        <a href="#reservation" class="button reserve">Online Reservation</a>
       </div>
     </div>
   </div>
 
+  <!-- Otaq N1 (ikinci) -->
   <div class="room">
-    <img src="otaqN7.jpg" alt="Otaq N7">
+    <img src="otaqN1b.jpg" alt="Otaq N1 - 3 nəfərlik">
     <div class="room-content">
       <div>
-        <h2>Otaq N7</h2>
-        <p>3 nəfərlik otaq. 3 ədəd bir nəfərlik çarpayı. Vanna otağı dəhlizdə otağa bitişikdir.</p>
-        <p class="price">Qiymət: 35–40 AZN</p>
+        <h2>Otaq N1</h2>
+        <p>3 nəfərlik otaq. 3 ədəd bir nəfərlik çarpayı. Vanna otağı dəhlizdə otağa bitişik.</p>
+        <p class="price">Qiymət: 35-40 AZN</p>
       </div>
       <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N7%20rezervasiya%20etmək%20istəyirəm." class="button call">📞 Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">🛏️ Online Reservation</a>
+        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N1%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
+        <a href="#reservation" class="button reserve">Online Reservation</a>
       </div>
     </div>
   </div>
 
-  <div class="footer">
-    Baku Butik Hotel — fərqi hiss edin!
-  </div>
+  <p style="text-align:center; font-weight:bold; color:#2c3e50; margin-top:40px;">Baku Butik Hotel - fərqi hiss edin!</p>
 
 </div>
 </body>
