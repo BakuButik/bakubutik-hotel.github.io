@@ -1,153 +1,129 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Baku Butik Hotel</title>
-<style>
-body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
-.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-.header { text-align: center; margin-bottom: 40px; }
-.header h1 { color: #2c3e50; }
-.header p { color: #555; line-height: 1.6; }
-
-.room { background: #fff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 30px; display: flex; flex-wrap: wrap; overflow: hidden; }
-.room img { width: 100%; max-width: 400px; border-right: 1px solid #ddd; }
-.room-content { padding: 20px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
-.room-content h2 { margin-top: 0; color: #34495e; }
-.room-content p { color: #555; line-height: 1.5; }
-.room-content ul { padding-left: 20px; color: #555; margin: 10px 0; }
-.room-content .price { font-weight: bold; color: #e74c3c; margin: 10px 0; }
-.buttons { margin-top: 15px; }
-.button { display: inline-block; padding: 10px 20px; margin-right: 10px; border-radius: 5px; text-decoration: none; color: #fff; transition: 0.3s; }
-.reserve { background: #28a745; }
-.reserve:hover { background: #218838; }
-.call { background: #007bff; }
-.call:hover { background: #0056b3; }
-@media(max-width:768px){ .room { flex-direction: column; } .room img { border-right: none; border-bottom: 1px solid #ddd; } }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baku Butik Hotel</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f6f6f6; color:#333; text-align:center; }
+    header { background:#333; color:white; padding:25px; }
+    header h1 { margin:0; font-size:2em; }
+    header p { margin-top:8px; font-size:1.1em; }
+    section { padding:20px; max-width:1000px; margin:0 auto; line-height:1.6; background:#fffdfa; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.08); }
+    .gallery { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:20px; }
+    .gallery img { width:100%; max-width:300px; height:auto; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2); transition: transform 0.2s; }
+    .gallery img:hover { transform:scale(1.03); }
+    .room { text-align:left; background:#fffaf2; margin-top:25px; border-radius:12px; padding:18px; border-left:5px solid #d4b179; }
+    .room h3 { color:#8b6c36; margin-top:0; }
+    .room p { color:#4c3e2c; font-size:1em; }
+    .buttons { margin-top:15px; text-align:center; }
+    .btn { display:inline-block; margin:5px; padding:10px 22px; border-radius:8px; text-decoration:none; color:white; font-weight:600; font-size:0.95em; transition: background 0.3s, transform 0.2s; }
+    .reserve { background:#b7935a; }
+    .call { background:#7a643a; }
+    .btn:hover { transform:scale(1.05); opacity:0.9; }
+    footer { background:#333; color:white; padding:15px; margin-top:40px; font-size:0.95em; }
+    footer a { color:#e7cfa1; text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
+  </style>
 </head>
 <body>
-<div class="container">
 
-  <!-- Header -->
-  <div class="header">
-    <h1>Baku Butik Hotel</h1>
-    <p>İnşaatçılar metrosu yaxınlığında 35-40 manat evə 3 nəfərlik ailəvi otaqlar təklif edir.</p>
-    <ul>
-      <li>Qonaqlar üçün hər bir şəraiti olan mətbəx</li>
-      <li>50 metr məsafədə 7/24 supermarket</li>
-      <li>Yüksək sürətli 5G wifi</li>
-      <li>Mərkəzi isitmə sistemi</li>
-      <li>Kondisioner</li>
-      <li>Led/smart TV</li>
-      <li>Otaqlarda çaynik, paket çay və şəkər</li>
-      <li>Qarşılama xidməti (transfer)</li>
-      <li>Gündəlik təmizlik xidməti</li>
-      <li>Otaqlarda adambaşı dəsmal dəstləri</li>
-      <li>Paltaryuyan maşın və yuyucu toz pulsuzdur</li>
-      <li>Evlilik tələb olunur</li>
-    </ul>
+<header>
+  <h1>Baku Butik Hotel</h1>
+  <p>İnşaatçılar metrosu yaxınlığında — ailəvi və rahat istirahət üçün ideal seçim</p>
+</header>
+
+<section>
+  <!-- Haqqımızda -->
+  <p>
+    Baku Butik Hotel sizə rahat, təmiz və ailəvi atmosferdə istirahət imkanı təqdim edir.  
+    Otaqlar 2, 3 və 4 nəfərlikdir. Qiymətlər 35–45 AZN aralığındadır.  
+    Qonaqlar üçün mətbəx, 24 saat isti su, Wi-Fi və kondisioner mövcuddur.  
+    Yaxınlıqda 7/24 supermarket, aptek və kafe fəaliyyət göstərir.  
+    İnşaatçılar metro stansiyasına piyada cəmi 6 dəqiqəlik məsafədə yerləşirik.
+  </p>
+
+  <!-- Şəkil qalereyası -->
+  <div class="gallery">
+    <img src="1759840732834.jpg" alt="Hotel şəkli">
+    <img src="1759840732844 (3).jpg" alt="Hotel şəkli">
+    <img src="1759840732894 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840732937 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840732946 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840732957 (3).jpg" alt="Hotel şəkli">
+    <img src="1759840732964 (3).jpg" alt="Hotel şəkli">
+    <img src="1759840732996 (2).jpg" alt="Hotel şəkli">
+    <img src="1759840733004 (2).jpg" alt="Hotel şəkli">
   </div>
 
-  <!-- Otaq N1 -->
+  <!-- Otaqlar -->
   <div class="room">
-    <img src="otaqN1.jpg" alt="Otaq N1 - 3 nəfərlik">
-    <div class="room-content">
-      <div>
-        <h2>Otaq N1</h2>
-        <p>3 nəfərlik otaq. 2 nəfərlik çarpayı, bir nəfərlik çarpayı. Əlavə olaraq açılan kreslo. Vanna otağı otağın daxilində.</p>
-        <p class="price">Qiymət: 35-40 AZN</p>
-      </div>
-      <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N1%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">Online Reservation</a>
-      </div>
+    <h3>Otaq №1</h3>
+    <p>Zövqlü ailələr üçün xüsusi rahatlıq. 2 nəfərlik və 1 nəfərlik çarpayı, əlavə <strong>təzə, yumşaq, enli açılan kreslo çarpayı</strong>. Vanna otağı otağın daxilində, hər detal diqqətlə düşünülüb.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
     </div>
+    <p style="margin-top:5px; color:#6b4e2c;">Otaq №1 — Sizin rahatlığınız bizim prioritetimizdir.</p>
   </div>
 
-  <!-- Otaq N2 -->
   <div class="room">
-    <img src="otaqN2.jpg" alt="Otaq N2 - 2 nəfərlik">
-    <div class="room-content">
-      <div>
-        <h2>Otaq N2</h2>
-        <p>İki nəfərlik otaq. 2 nəfərlik çarpayı. Əlavə olaraq açılan kreslo. Vanna otağı otağın daxilində.</p>
-        <p class="price">Qiymət: 35-40 AZN</p>
-      </div>
-      <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N2%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">Online Reservation</a>
-      </div>
+    <h3>Otaq №2</h3>
+    <p>İsti və səliqəli otaq. 2 nəfərlik çarpayı və əlavə <strong>təzə, yumşaq, enli açılan kreslo çarpayı</strong>. Daxili vanna otağı və müasir avadanlıqlar mövcuddur.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
     </div>
+    <p style="margin-top:5px; color:#6b4e2c;">Otaq №2 — Sizin üçün düşünülmüş komfort.</p>
   </div>
 
-  <!-- Otaq N3 -->
   <div class="room">
-    <img src="otaqN3.jpg" alt="Otaq N3 - 2 nəfərlik">
-    <div class="room-content">
-      <div>
-        <h2>Otaq N3</h2>
-        <p>İki nəfərlik otaq. 2 nəfərlik çarpayı. Əlavə olaraq açılan kreslo. Vanna otağı otağın daxilində.</p>
-        <p class="price">Qiymət: 35-40 AZN</p>
-      </div>
-      <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N3%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">Online Reservation</a>
-      </div>
+    <h3>Otaq №3</h3>
+    <p>Romantik və sakit atmosfer. 2 nəfərlik çarpayı və əlavə <strong>təzə, yumşaq, enli açılan kreslo çarpayı</strong>. Vanna otağı otağın daxilində, hər gün təmizlənir.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
     </div>
+    <p style="margin-top:5px; color:#6b4e2c;">Otaq №3 — Hər detal sizin rahatlığınız üçün nəzərdə tutulub.</p>
   </div>
 
-  <!-- Otaq N4 -->
   <div class="room">
-    <img src="otaqN4.jpg" alt="Otaq N4 - 2 nəfərlik">
-    <div class="room-content">
-      <div>
-        <h2>Otaq N4</h2>
-        <p>İki nəfərlik otaq. 2 nəfərlik çarpayı. Vanna otağı otağın daxilində.</p>
-        <p class="price">Qiymət: 35-40 AZN</p>
-      </div>
-      <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N4%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">Online Reservation</a>
-      </div>
+    <h3>Otaq №4</h3>
+    <p>Minimalist dizayn, sakitlik və komfort. 2 nəfərlik çarpayı, vanna otağı otağın daxilindədir.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
     </div>
+    <p style="margin-top:5px; color:#6b4e2c;">Otaq №4 — Sakit və rahat məkan.</p>
   </div>
 
-  <!-- Otaq N6 -->
   <div class="room">
-    <img src="otaqN6.jpg" alt="Otaq N6 - 3 nəfərlik">
-    <div class="room-content">
-      <div>
-        <h2>Otaq N6</h2>
-        <p>3 nəfərlik otaq. 2 nəfərlik çarpayı, bir nəfərlik çarpayı. Əlavə olaraq açılan kreslo. Vanna otağı dəhlizdə üzbəüz.</p>
-        <p class="price">Qiymət: 35-40 AZN</p>
-      </div>
-      <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N6%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">Online Reservation</a>
-      </div>
+    <h3>Otaq №6</h3>
+    <p>3 nəfərlik geniş otaq. 2 nəfərlik və 1 nəfərlik çarpayı, əlavə <strong>təzə, yumşaq, enli açılan kreslo çarpayı</strong>. Vanna otağı dəhlizdə, gündəlik xidmət ilə.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
     </div>
+    <p style="margin-top:5px; color:#6b4e2c;">Otaq №6 — Komfort və nəvazişlə bəzədilmiş məkan.</p>
   </div>
 
-  <!-- Otaq N1 (ikinci) -->
   <div class="room">
-    <img src="otaqN1b.jpg" alt="Otaq N1 - 3 nəfərlik">
-    <div class="room-content">
-      <div>
-        <h2>Otaq N1</h2>
-        <p>3 nəfərlik otaq. 3 ədəd bir nəfərlik çarpayı. Vanna otağı dəhlizdə otağa bitişik.</p>
-        <p class="price">Qiymət: 35-40 AZN</p>
-      </div>
-      <div class="buttons">
-        <a href="https://wa.me/994773480060?text=Salam,%20mən%20Otaq%20N1%20rezervasiya etmək istəyirəm" class="button call">Call / WhatsApp</a>
-        <a href="#reservation" class="button reserve">Online Reservation</a>
-      </div>
+    <h3>Otaq №7</h3>
+    <p>Səliqəli, geniş 2 nəfərlik çarpayı ilə, vanna otağı otağa bitişik. Sakit və rahat atmosfer təmin olunur.</p>
+    <div class="buttons">
+      <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+      <a href="tel:+994773480060" class="btn call">Zəng et</a>
     </div>
+    <p style="margin-top:5px; color:#6b4e2c;">Otaq №7 — Hər detal sizin rahatlığınız üçün nəzərdə tutulub.</p>
   </div>
 
-  <p style="text-align:center; font-weight:bold; color:#2c3e50; margin-top:40px;">Baku Butik Hotel - fərqi hiss edin!</p>
+</section>
 
-</div>
+<footer>
+  <p>Əlaqə: +994773480060 (WhatsApp mövcuddur)</p>
+  <p>Email: bakubutik@gmail.com</p>
+  <p>© 2025 Baku Butik Hotel</p>
+</footer>
+
 </body>
 </html>
