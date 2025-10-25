@@ -33,20 +33,24 @@
       line-height: 1.6;
     }
     .gallery {
+      /* Flexbox istifadə edərək şəkilləri düzürük */
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: wrap; 
       justify-content: center;
       gap: 10px;
       margin-top: 20px;
     }
     .gallery img {
-      width: 300px;
+      /* Mobil və böyük ekranlar üçün şəkil ölçüsünü təyin edirik */
+      width: 100%; 
+      max-width: 300px; 
+      height: auto; 
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       transition: transform 0.2s;
     }
     .gallery img:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
     }
     footer {
       background: #333;
@@ -74,15 +78,33 @@
     </p>
 
     <div class="gallery">
-      <img src="1759840733022 (2).jpg" alt="Otaq 1">
-      <img src="1761225294245.JPG" alt="Otaq 2">
-      <img src="1761225294294.JPG" alt="Otaq 3">
-      <img src="1761225294341.JPG" alt="Otaq 4">
-      <img src="1761225294366.JPG" alt="Otaq 5">
-      <img src="1761225294385.JPG" alt="Otaq 6">
-      <img src="1761225294406.JPG" alt="Otaq 7">
-      <img src="1761225294428.JPG" alt="Otaq 8">
-      <img src="1761225294446.JPG" alt="Otaq 9">
+      <img src="1759840732834.jpg" alt="Hotel Şəkli">
+      <img src="1759840732844 (3).jpg" alt="Hotel Şəkli">
+      <img src="1759840732894 (2).jpg" alt="Hotel Şəkli">
+      <img src="1759840732937 (2).jpg" alt="Hotel Şəkli">
+      <img src="1759840732946 (2).jpg" alt="Hotel Şəkli">
+      <img src="1759840732957 (3).jpg" alt="Hotel Şəkli">
+      <img src="1759840732964 (3).jpg" alt="Hotel Şəkli">
+      <img src="1759840732996 (2).jpg" alt="Hotel Şəkli">
+      <img src="1759840733004 (2).jpg" alt="Hotel Şəkli">
+      <img src="1759840733013.jpg" alt="Hotel Şəkli">
+      <img src="1759840733022 (2).jpg" alt="Hotel Şəkli">
+      <img src="1759840733029 (2).jpg" alt="Hotel Şəkli">
+      <img src="1759840733037 (2).jpg" alt="Hotel Şəkli">
+      <img src="1759840733048 (2).jpg" alt="Hotel Şəkli">
+      <img src="1759840733073.jpg" alt="Hotel Şəkli">
+      <img src="1761225294022.jpg" alt="Hotel Şəkli">
+      <img src="1761225294225.JPG" alt="Hotel Şəkli">
+      <img src="1761225294233.JPG" alt="Hotel Şəkli">
+      <img src="1761225294245.JPG" alt="Hotel Şəkli">
+      <img src="1761225294256.JPG" alt="Hotel Şəkli">
+      <img src="1761225294274.JPG" alt="Hotel Şəkli">
+      <img src="1761225294285.JPG" alt="Hotel Şəkli">
+      <img src="1761225294294.JPG" alt="Hotel Şəkli">
+      <img src="1761225294306.JPG" alt="Hotel Şəkli">
+      <img src="1761225294329.JPG" alt="Hotel Şəkli">
+      <img src="1761225294341.JPG" alt="Hotel Şəkli">
+      <img src="1761225294366.JPG" alt="Hotel Şəkli">
     </div>
   </section>
 
