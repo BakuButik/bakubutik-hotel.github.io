@@ -6,74 +6,139 @@
   <title>Baku Butik Hotel</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Poppins", "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f6f6f6;
-      color: #333;
+      background: #f8f6f2;
+      color: #3a3a3a;
       text-align: center;
     }
+
     header {
-      background: #333;
-      color: white;
-      padding: 25px;
+      background: linear-gradient(120deg, #c8ad7f, #e4d5b7);
+      color: #2e2e2e;
+      padding: 40px 10px;
+      border-bottom: 3px solid #d1b47b;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
+      letter-spacing: 1px;
+      font-weight: 600;
     }
+
     header p {
       margin-top: 8px;
       font-size: 1.1em;
+      color: #4b3f2f;
     }
+
     section {
-      padding: 20px;
+      padding: 30px 20px;
       max-width: 1000px;
-      margin: 0 auto;
-      line-height: 1.6;
+      margin: 20px auto;
+      background: #fffdfa;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      line-height: 1.7;
     }
+
+    h2 {
+      color: #b7935a;
+      font-size: 1.6em;
+      border-bottom: 2px solid #e0cda9;
+      display: inline-block;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+    }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       margin-top: 20px;
     }
+
     .gallery img {
       width: 100%;
       max-width: 300px;
-      height: auto;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      transition: transform 0.2s;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
+
     .gallery img:hover {
-      transform: scale(1.03);
+      transform: scale(1.04);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
     }
+
     .room {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin: 20px 0;
-      padding: 15px;
+      background: #fffaf2;
+      margin-top: 25px;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      border-left: 5px solid #d4b179;
       text-align: left;
     }
+
     .room h3 {
+      color: #8b6c36;
       margin-top: 0;
-      color: #333;
     }
+
     .room p {
-      margin: 5px 0;
+      color: #4c3e2c;
+      font-size: 1em;
     }
-    .highlight {
-      font-weight: bold;
-      color: #e67e22;
+
+    .buttons {
+      margin-top: 15px;
+      text-align: center;
     }
-    footer {
-      background: #333;
+
+    .btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
       color: white;
-      padding: 15px;
+      font-weight: 600;
+      font-size: 0.95em;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .reserve {
+      background: #b7935a;
+    }
+
+    .call {
+      background: #7a643a;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    footer {
+      background: #3b2f1e;
+      color: #f6f3eb;
+      padding: 20px;
       margin-top: 40px;
+      font-size: 0.95em;
+    }
+
+    footer a {
+      color: #e7cfa1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -81,105 +146,103 @@
 
   <header>
     <h1>Baku Butik Hotel</h1>
-    <p>Təmiz və ailəvi istirahət üçün ideal seçim — Metro İnşaatçılar yaxınlığında</p>
+    <p>İnşaatçılar metrosu yaxınlığında — ailəvi və rahat istirahət üçün ideal seçim</p>
   </header>
 
   <section>
     <h2>Haqqımızda</h2>
     <p>
-      Baku Butik Hotel sizə rahat, təmiz və ailəvi atmosferdə istirahət imkanı təqdim edir.  
-      Otaqlar 2, 3 və 4 nəfərlikdir. Qiymətlər 35–45 AZN aralığındadır.  
-      Qonaqlar üçün mətbəx, 24 saat isti su, Wi-Fi və kondisioner mövcuddur.  
-      Yaxınlıqda 7/24 supermarket, aptek və kafe fəaliyyət göstərir.  
-      İnşaatçılar metro stansiyasına piyada cəmi 6 dəqiqəlik məsafədə yerləşirik.
+      Baku Butik Hotel İnşaatçılar metrosu yaxınlığında 35–40 manat aralığında 2 və 3 nəfərlik ailəvi otaqlar təklif edir.  
+      <br><br>
+      • Qonaqlar üçün hər bir şəraiti olan mətbəx  
+      • 50 metr məsafədə 7/24 supermarket  
+      • Yüksək sürətli 5G Wi-Fi  
+      • Mərkəzi isitmə sistemi  
+      • Kondisioner  
+      • LED/Smart TV  
+      • Otaqlarda çaynik, paket çay və şəkər  
+      • Qarşılama xidməti (transfer)  
+      • Gündəlik təmizlik xidməti  
+      • Otaqlarda adambaşı dəsmal dəstləri  
+      • Paltaryuyan maşın və yuyucu toz pulsuzdur  
+      • Evlilik tələb olunur
     </p>
 
     <div class="gallery">
-      <!-- Sənin şəkillərin olduğu hissə olduğu kimi qalır -->
-      <img src="1759840732834.jpg" alt="Hotel Şəkli">
-      <img src="1759840732844 (3).jpg" alt="Hotel Şəkli">
-      <img src="1759840732894 (2).jpg" alt="Hotel Şəkli">
-      <img src="1759840732937 (2).jpg" alt="Hotel Şəkli">
-      <img src="1759840732946 (2).jpg" alt="Hotel Şəkli">
-      <img src="1759840732957 (3).jpg" alt="Hotel Şəkli">
-      <img src="1759840732964 (3).jpg" alt="Hotel Şəkli">
-      <img src="1759840732996 (2).jpg" alt="Hotel Şəkli">
-      <img src="1759840733004 (2).jpg" alt="Hotel Şəkli">
-      <img src="1759840733013.jpg" alt="Hotel Şəkli">
-      <img src="1759840733022 (2).jpg" alt="Hotel Şəkli">
-      <img src="1759840733029 (2).jpg" alt="Hotel Şəkli">
-      <img src="1759840733037 (2).jpg" alt="Hotel Şəkli">
-      <img src="1759840733048 (2).jpg" alt="Hotel Şəkli">
-      <img src="1759840733073.jpg" alt="Hotel Şəkli">
-      <img src="1761225294022.jpg" alt="Hotel Şəkli">
-      <img src="1761225294225.JPG" alt="Hotel Şəkli">
-      <img src="1761225294233.JPG" alt="Hotel Şəkli">
-      <img src="1761225294245.JPG" alt="Hotel Şəkli">
-      <img src="1761225294256.JPG" alt="Hotel Şəkli">
-      <img src="1761225294274.JPG" alt="Hotel Şəkli">
-      <img src="1761225294285.JPG" alt="Hotel Şəkli">
-      <img src="1761225294294.JPG" alt="Hotel Şəkli">
-      <img src="1761225294306.JPG" alt="Hotel Şəkli">
-      <img src="1761225294329.JPG" alt="Hotel Şəkli">
-      <img src="1761225294341.JPG" alt="Hotel Şəkli">
-      <img src="1761225294366.JPG" alt="Hotel Şəkli">
+      <img src="1759840732834.jpg" alt="Hotel şəkli">
+      <img src="1759840732844 (3).jpg" alt="Hotel şəkli">
+      <img src="1759840732894 (2).jpg" alt="Hotel şəkli">
+      <img src="1759840732937 (2).jpg" alt="Hotel şəkli">
+      <img src="1759840732946 (2).jpg" alt="Hotel şəkli">
+      <img src="1759840732957 (3).jpg" alt="Hotel şəkli">
     </div>
-  </section>
-
-  <section>
-    <h2>Otaqlarımız və Xidmətlər</h2>
-    <p><span class="highlight">Baku Butik Hotel</span> İnşaatçılar metrosu yaxınlığında 35–40 manat arası 3 nəfərlik ailəvi otaqlar təklif edir.</p>
-    <ul style="text-align:left; display:inline-block;">
-      <li>Qonaqlar üçün hər bir şəraiti olan mətbəx</li>
-      <li>50 metr məsafədə 7/24 supermarket</li>
-      <li>Yüksək sürətli 5G Wi-Fi</li>
-      <li>Mərkəzi isitmə sistemi</li>
-      <li>Kondisioner</li>
-      <li>LED / Smart TV</li>
-      <li>Otaqlarda çaynik, paket çay və şəkər</li>
-      <li>Qarşılama xidməti (transfer)</li>
-      <li>Gündəlik təmizlik xidməti</li>
-      <li>Otaqlarda adambaşı dəsmal dəstləri</li>
-      <li>Paltaryuyan maşın və yuyucu toz pulsuzdur</li>
-      <li><strong>Evlilik tələb olunur</strong></li>
-    </ul>
 
     <div class="room">
       <h3>Otaq №1</h3>
-      <p>3 nəfərlik otaq. 2 nəfərlik çarpayı, bir nəfərlik çarpayı, əlavə açılan kreslo. Vanna otağı otağın daxilindədir.</p>
+      <p>3 nəfərlik geniş otaq — ailələr üçün ideal. 2 nəfərlik və 1 nəfərlik çarpayı, əlavə açılan kreslo.  
+      Vanna otağı otağın daxilindədir, yumşaq dəsmallar və gündəlik təmizlik xidməti daxildir.</p>
+      <div class="buttons">
+        <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+        <a href="tel:+994773480060" class="btn call">Zəng et</a>
+      </div>
     </div>
 
     <div class="room">
       <h3>Otaq №2</h3>
-      <p>2 nəfərlik otaq. 2 nəfərlik çarpayı, əlavə açılan kreslo. Vanna otağı otağın daxilindədir.</p>
+      <p>İki nəfərlik zövqlü otaq — sakitlik və rahatlıq axtaranlar üçün.  
+      Daxili vanna otağı, isti su, LED TV və kondisioner mövcuddur.</p>
+      <div class="buttons">
+        <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+        <a href="tel:+994773480060" class="btn call">Zəng et</a>
+      </div>
     </div>
 
     <div class="room">
       <h3>Otaq №3</h3>
-      <p>2 nəfərlik otaq. 2 nəfərlik çarpayı, əlavə açılan kreslo. Vanna otağı otağın daxilindədir.</p>
+      <p>İki nəfərlik otaq — səliqəli dizayn və yumşaq işıqlandırma.  
+      Vanna otağı otağın içindədir, hər gün dezinfeksiya olunur.</p>
+      <div class="buttons">
+        <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+        <a href="tel:+994773480060" class="btn call">Zəng et</a>
+      </div>
     </div>
 
     <div class="room">
       <h3>Otaq №4</h3>
-      <p>2 nəfərlik otaq. 2 nəfərlik çarpayı. Vanna otağı otağın daxilindədir.</p>
+      <p>İki nəfərlik rahat otaq — kompakt, lakin hər detalı düşünülmüş.  
+      Daxili vanna otağı və yüksək səviyyəli təmizliklə fərqlənir.</p>
+      <div class="buttons">
+        <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+        <a href="tel:+994773480060" class="btn call">Zəng et</a>
+      </div>
+    </div>
+
+    <div class="room">
+      <h3>Otaq №5</h3>
+      <p>3 nəfərlik ailə otağı — 2 nəfərlik və 1 nəfərlik çarpayı, əlavə kreslo.  
+      Vanna otağı dəhlizdə otağa bitişikdir və daim təmiz saxlanılır.</p>
+      <div class="buttons">
+        <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+        <a href="tel:+994773480060" class="btn call">Zəng et</a>
+      </div>
     </div>
 
     <div class="room">
       <h3>Otaq №6</h3>
-      <p>3 nəfərlik otaq. 2 nəfərlik çarpayı, bir nəfərlik çarpayı, əlavə açılan kreslo. Vanna otağı dəhlizdə, otağa qarşı tərəfdədir.</p>
+      <p>3 nəfərlik otaq — 3 ayrı çarpayı, səliqəli interyer və müstəqil sanitar qovşaq.  
+      Dəhlizdə yerləşən şəxsi vanna otağı və gündəlik xidmət daxildir.</p>
+      <div class="buttons">
+        <a href="https://wa.me/994773480060" class="btn reserve">Online rezervasiya</a>
+        <a href="tel:+994773480060" class="btn call">Zəng et</a>
+      </div>
     </div>
 
-    <div class="room">
-      <h3>Otaq №7</h3>
-      <p>3 nəfərlik otaq. 3 ədəd bir nəfərlik çarpayı. Vanna otağı dəhlizdə, otağa bitişikdir.</p>
-    </div>
-
-    <p style="font-weight:bold; color:#2c3e50; margin-top:30px;">Baku Butik Hotel — fərqi hiss edin!</p>
+    <p style="margin-top:30px; font-weight:bold; color:#8b6c36;">Baku Butik Hotel — fərqi hiss edin!</p>
   </section>
 
   <footer>
-    <p>📞 Əlaqə: <a href="https://wa.me/994773480060" style="color:white;">+994773480060 (WhatsApp)</a></p>
-    <p>📧 Email: bakubutik@gmail.com</p>
+    <p>📞 Əlaqə: <a href="tel:+994773480060">+994773480060</a> (WhatsApp mövcuddur)</p>
+    <p>📧 Email: <a href="mailto:bakubutik@gmail.com">bakubutik@gmail.com</a></p>
     <p>© 2025 Baku Butik Hotel — Rahatlığınız üçün buradayıq</p>
   </footer>
 
