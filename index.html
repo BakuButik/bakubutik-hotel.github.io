@@ -33,24 +33,41 @@
       line-height: 1.6;
     }
     .gallery {
-      /* Flexbox istifadə edərək şəkilləri düzürük */
       display: flex;
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
       margin-top: 20px;
     }
     .gallery img {
-      /* Mobil və böyük ekranlar üçün şəkil ölçüsünü təyin edirik */
-      width: 100%; 
-      max-width: 300px; 
-      height: auto; 
+      width: 100%;
+      max-width: 300px;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       transition: transform 0.2s;
     }
     .gallery img:hover {
       transform: scale(1.03);
+    }
+    .room {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      padding: 15px;
+      text-align: left;
+    }
+    .room h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .room p {
+      margin: 5px 0;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #e67e22;
     }
     footer {
       background: #333;
@@ -78,6 +95,7 @@
     </p>
 
     <div class="gallery">
+      <!-- Sənin şəkillərin olduğu hissə olduğu kimi qalır -->
       <img src="1759840732834.jpg" alt="Hotel Şəkli">
       <img src="1759840732844 (3).jpg" alt="Hotel Şəkli">
       <img src="1759840732894 (2).jpg" alt="Hotel Şəkli">
@@ -108,8 +126,59 @@
     </div>
   </section>
 
+  <section>
+    <h2>Otaqlarımız və Xidmətlər</h2>
+    <p><span class="highlight">Baku Butik Hotel</span> İnşaatçılar metrosu yaxınlığında 35–40 manat arası 3 nəfərlik ailəvi otaqlar təklif edir.</p>
+    <ul style="text-align:left; display:inline-block;">
+      <li>Qonaqlar üçün hər bir şəraiti olan mətbəx</li>
+      <li>50 metr məsafədə 7/24 supermarket</li>
+      <li>Yüksək sürətli 5G Wi-Fi</li>
+      <li>Mərkəzi isitmə sistemi</li>
+      <li>Kondisioner</li>
+      <li>LED / Smart TV</li>
+      <li>Otaqlarda çaynik, paket çay və şəkər</li>
+      <li>Qarşılama xidməti (transfer)</li>
+      <li>Gündəlik təmizlik xidməti</li>
+      <li>Otaqlarda adambaşı dəsmal dəstləri</li>
+      <li>Paltaryuyan maşın və yuyucu toz pulsuzdur</li>
+      <li><strong>Evlilik tələb olunur</strong></li>
+    </ul>
+
+    <div class="room">
+      <h3>Otaq №1</h3>
+      <p>3 nəfərlik otaq. 2 nəfərlik çarpayı, bir nəfərlik çarpayı, əlavə açılan kreslo. Vanna otağı otağın daxilindədir.</p>
+    </div>
+
+    <div class="room">
+      <h3>Otaq №2</h3>
+      <p>2 nəfərlik otaq. 2 nəfərlik çarpayı, əlavə açılan kreslo. Vanna otağı otağın daxilindədir.</p>
+    </div>
+
+    <div class="room">
+      <h3>Otaq №3</h3>
+      <p>2 nəfərlik otaq. 2 nəfərlik çarpayı, əlavə açılan kreslo. Vanna otağı otağın daxilindədir.</p>
+    </div>
+
+    <div class="room">
+      <h3>Otaq №4</h3>
+      <p>2 nəfərlik otaq. 2 nəfərlik çarpayı. Vanna otağı otağın daxilindədir.</p>
+    </div>
+
+    <div class="room">
+      <h3>Otaq №6</h3>
+      <p>3 nəfərlik otaq. 2 nəfərlik çarpayı, bir nəfərlik çarpayı, əlavə açılan kreslo. Vanna otağı dəhlizdə, otağa qarşı tərəfdədir.</p>
+    </div>
+
+    <div class="room">
+      <h3>Otaq №7</h3>
+      <p>3 nəfərlik otaq. 3 ədəd bir nəfərlik çarpayı. Vanna otağı dəhlizdə, otağa bitişikdir.</p>
+    </div>
+
+    <p style="font-weight:bold; color:#2c3e50; margin-top:30px;">Baku Butik Hotel — fərqi hiss edin!</p>
+  </section>
+
   <footer>
-    <p>📞 Əlaqə: +994773480060 (WhatsApp mövcuddur)</p>
+    <p>📞 Əlaqə: <a href="https://wa.me/994773480060" style="color:white;">+994773480060 (WhatsApp)</a></p>
     <p>📧 Email: bakubutik@gmail.com</p>
     <p>© 2025 Baku Butik Hotel — Rahatlığınız üçün buradayıq</p>
   </footer>
